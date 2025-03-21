@@ -55,6 +55,7 @@ The app can be found from Task Manager under background processes.
 - Runs silently in the background
 - Works with all audio devices and system outputs
 - Windows 10/11 supported
+- Open Source
 
 <hr style="height:4px; background-color:#3d444d; border:none;" />
 
