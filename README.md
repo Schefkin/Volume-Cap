@@ -8,7 +8,7 @@ Table of Contents
 
 <hr style="height:4px; background-color:#3d444d; border:none;" />
 
-🏡 Website : <a href="https://getvolumecap.com/" target="_blank" rel="noopener noreferrer" class="hero-btn">https://getvolumecap.com/</a>
+🏡 Website : [https://getvolumecap.com](https://getvolumecap.com)
 
 ## 1. Download
 
