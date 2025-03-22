@@ -5,6 +5,7 @@ import sys
 import socket
 import pickle
 import os
+import webbrowser
 from ctypes import POINTER, cast
 from comtypes import CLSCTX_ALL, CoInitialize
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
@@ -120,6 +121,9 @@ def on_slider_change(val):
     except:
         pass
 
+def open_support_link(event):
+    webbrowser.open("https://www.patreon.com/al_0160")
+
 def create_gui():
     global root, slider
     root = tk.Tk()
@@ -150,6 +154,10 @@ def create_gui():
     slider = tk.Scale(root, from_=0, to=100, orient=tk.HORIZONTAL, command=on_slider_change, length=150)
     slider.set(load_settings())
     slider.pack()
+
+    support_label = tk.Label(root, text="Please support me on Patreon", fg="blue", cursor="hand2")
+    support_label.pack(pady=5)
+    support_label.bind("<Button-1>", open_support_link)
 
     root.mainloop()
 
